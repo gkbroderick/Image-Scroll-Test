@@ -1,7 +1,7 @@
 var imageList = [
-  '../imgs/Tri1.png',
-  '../imgs/Tri2.png',
-  '../imgs/Tri3.png'
+  './imgs/Tri1.png',
+  './imgs/Tri2.png',
+  './imgs/Tri3.png'
 ];
 
 //adapted from css-tricks https://css-tricks.com/snippets/jquery/image-preloader/
@@ -14,7 +14,7 @@ $.preloadImages(imageList);
 
 
 $(window).scroll(function(e) {
-  var breakpoints = [300, 600];
+  var breakpoints = [500, 1000];
   var fromTop = $(window).scrollTop();
   console.log(fromTop);
 
