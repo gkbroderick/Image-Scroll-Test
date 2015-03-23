@@ -24,8 +24,16 @@ main
 
 #changeFigure
   position: fixed
-  max-width: 800px
-  left: 50%
-  top: 50%
-  transform: translate(-50%, -50%)
-  -webkit-transform: translate(-50%, -50%)
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  @media only screen and (max-device-width: 800px) and (orientation: landscape)
+    top: 100px
+  & img
+    max-width: 800px
+    @media only screen and (max-device-width: 800px) and (orientation: landscape)
+      max-width: 500px
